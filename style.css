@@ -273,7 +273,22 @@ label input #factor{
     margin: 0;
     text-align: left;
 }
+/* free pass */
+.free-pass{
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 5rem;
+}
+.free-pass-offer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 
+}
+.free-pass-1{
+    text-align: center;
+}
 /* Footer */
 
 footer{
@@ -316,30 +331,9 @@ hr{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* responsive */
 @media screen and (max-width: 576px){
-    .navbar, .banner-content, .change-part, .extra-mile-container, .our-team, footer, .calculation-bmi{
+    .navbar, .banner-content, .change-part, .extra-mile-container, .our-team, footer, .calculation-bmi, .free-workout{
         margin: 0 1.5rem;
     }
     .fitness-exercise{
@@ -510,6 +504,15 @@ hr{
         margin: 0;
         text-align: left;
     }
+
+    /* free pass */
+   
+    .free-pass-offer{
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+    
 
     /* Footer */
 .footer-container{
