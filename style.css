@@ -21,7 +21,7 @@ body{
 
 
 /* Navbar Style */
-nav,.extra-mile-container{
+nav,.extra-mile-container, .our-team{
     max-width: 1060px;
     margin: 0 auto;
 }
@@ -60,6 +60,9 @@ nav,.extra-mile-container{
     justify-content: space-between;
     align-items: center;
     margin-top: 2rem;
+}
+.banner-description{
+    margin: 25px 0;
 }
 .banner-title{
     font-size: 4rem;
@@ -122,6 +125,9 @@ nav,.extra-mile-container{
 .change-info{
     text-align: center;
 }
+.change-info p{
+    text-align: center;
+}
 .change-info-title{
     font-size: 3rem;
     font-weight: 700;
@@ -170,7 +176,44 @@ nav,.extra-mile-container{
 .extra-mile-info{
     color: #948A8A;
 }
+.our-team-des{
+    margin: 0 auto;
+    text-align: center;
+}
+/* trainer-description */
+.trainer-portfolio{
+    text-align: center;
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 auto;
+    justify-content: center;
+    place-items: center;
+    margin-top: 3.5rem;
+    border-radius: 20px;
+    padding: 2rem;
+    background-color: #222222;
+}
+.trainer-portal img{
+    width: 100%;
+    border-radius: 20px;
 
+}
+.trainer-description{
+    position: absolute;
+    /* background-color:gray ; */
+    width: 160px;
+    border-radius: 20px;
+    padding: 2px 10px;
+    margin-top: -60px;
+    margin-left: 0px;
+    z-index: 1;
+    /* border: 1px solid gray; */
+}
+.trainer-description h3, p{
+    margin: 0;
+    text-align: left;
+}
 
 
 
@@ -199,7 +242,7 @@ nav,.extra-mile-container{
 
 /* responsive */
 @media screen and (max-width: 576px){
-    .navbar, .banner-content, .change-part, .extra-mile-container{
+    .navbar, .banner-content, .change-part, .extra-mile-container, .our-team{
         margin: 0 1.5rem;
     }
     .fitness-exercise{
@@ -278,6 +321,7 @@ nav,.extra-mile-container{
         gap: 10px;
         place-items: center;
         margin-top: 3.5rem;
+        margin-bottom: 3.5rem;
     }
     .card img{
         border-radius: 50%;
@@ -313,5 +357,42 @@ nav,.extra-mile-container{
     .extra-mile-btn{
         width: 100%;
     }
+
+
+    /* trainer-description */
+    .trainer-portfolio{
+        text-align: center;
+        gap: 1rem;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0 auto;
+        justify-content: center;
+        place-items: center;
+        margin-top: 3.5rem;
+        border-radius: 20px;
+        padding: 1rem;
+        background-color: #222222;
+    }
+    .trainer-portal img{
+        width: 100%;
+        border-radius: 20px;
+
+    }
+    .trainer-description{
+        position: absolute;
+        /* background-color:gray ; */
+        width: 160px;
+        border-radius: 20px;
+        padding: 2px 10px;
+        margin-top: -60px;
+        margin-left: 0px;
+        z-index: 1;
+        /* border: 1px solid gray; */
+    }
+    .trainer-description h3, p{
+        margin: 0;
+        text-align: left;
+    }
+
 
 }
