@@ -13,15 +13,15 @@
   
 /* Body Style */
 body{
-    background-color: #333333;
     max-width: 1440px;
+    background-color: #000000;
     margin: 0 auto;
     color: #FFFFFF;
 }
 
 
 /* Navbar Style */
-nav,.extra-mile-container, .our-team{
+nav,.extra-mile-container, .our-team, .footer-container, hr{
     max-width: 1060px;
     margin: 0 auto;
 }
@@ -63,6 +63,7 @@ nav,.extra-mile-container, .our-team{
 }
 .banner-description{
     margin: 25px 0;
+    color: #FFFFFF80;
 }
 .banner-title{
     font-size: 4rem;
@@ -127,6 +128,7 @@ nav,.extra-mile-container, .our-team{
 }
 .change-info p{
     text-align: center;
+    color: #FFFFFF80;
 }
 .change-info-title{
     font-size: 3rem;
@@ -140,7 +142,8 @@ nav,.extra-mile-container, .our-team{
 }
 .card>p{
     margin: 5px;
-    color:rgba(255, 255, 255, 0.5);;
+    color: #FFFFFF80;
+    text-align: center;
 }
 .card img{
     border-radius: 50%;
@@ -175,6 +178,9 @@ nav,.extra-mile-container, .our-team{
 }
 .extra-mile-info{
     color: #948A8A;
+}
+.extra-mile-btn{
+    margin-top: 2rem;
 }
 .our-team-des{
     margin: 0 auto;
@@ -215,8 +221,46 @@ nav,.extra-mile-container, .our-team{
     text-align: left;
 }
 
+/* Footer */
 
-
+footer{
+    max-width: 1440px;
+    background-color: #FFFFFF1A;
+}
+.footer-container{
+     display: grid;
+     grid-template-columns:3fr repeat(2, 2fr);
+     margin-top: 6rem;
+     /* background-color: #FFFFFF1A; */
+     /* place-items:; */
+     /* justify-items: center; */
+     /* justify-content: space-between; */
+}
+.footer-fitness h1{
+    color: #e6533c;
+    font-size: 4rem;
+    font-weight: 900;
+    
+}
+.footer-fitness p{
+    color: #FFFFFF80;
+    
+}
+.footer-options p{
+    font-size: 1.5rem;
+    padding: 10px 10px 10px 0px;
+    color: #FFFFFF80;
+}
+.allright-fitness{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 0.5rem;
+    color: #FFFFFF80;
+}
+hr{
+    border: 0.5px solid #FFFFFF80;
+    margin-top: 1rem;
+}
 
 
 
@@ -242,7 +286,7 @@ nav,.extra-mile-container, .our-team{
 
 /* responsive */
 @media screen and (max-width: 576px){
-    .navbar, .banner-content, .change-part, .extra-mile-container, .our-team{
+    .navbar, .banner-content, .change-part, .extra-mile-container, .our-team, footer{
         margin: 0 1.5rem;
     }
     .fitness-exercise{
@@ -393,6 +437,16 @@ nav,.extra-mile-container, .our-team{
         margin: 0;
         text-align: left;
     }
+
+    /* Footer */
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+
+
 
 
 }
