@@ -21,7 +21,7 @@ body{
 
 
 /* Navbar Style */
-nav{
+nav,.extra-mile-container{
     max-width: 1060px;
     margin: 0 auto;
 }
@@ -154,8 +154,22 @@ nav{
     margin-top: 3.5rem;
 }
 
-
-
+/* Extra mile running */
+.extra-mile-container{
+    padding: 30px;
+    background-color: #222222;
+    border-radius: 20px;
+}
+.extra-mile-title{
+    margin: 0px;
+}
+.extra-mile-running{
+    display: flex;
+    justify-content: space-between;
+}
+.extra-mile-info{
+    color: #948A8A;
+}
 
 
 
@@ -185,7 +199,7 @@ nav{
 
 /* responsive */
 @media screen and (max-width: 576px){
-    .navbar, .banner-content, .change-part{
+    .navbar, .banner-content, .change-part, .extra-mile-container{
         margin: 0 1.5rem;
     }
     .fitness-exercise{
@@ -270,4 +284,34 @@ nav{
         border: 1px solid white;
         width: 100%;
     }
+    
+    /* Extra mile running */
+    .extra-mile-container{
+        padding: 30px;
+        background-color: #222222;
+        border-radius: 20px;
+    }
+    .extra-mile-running{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .extra-mile-info{
+        color: #948A8A;
+    }
+    .extra-mile-img img{
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .extra-mile-title{
+        margin: 0px;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+
+    .extra-mile-btn{
+        width: 100%;
+    }
+
 }
