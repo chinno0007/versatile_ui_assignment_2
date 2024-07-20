@@ -21,7 +21,7 @@ body{
 
 
 /* Navbar Style */
-nav,.extra-mile-container, .our-team, .footer-container, hr{
+nav,.extra-mile-container, .our-team, .footer-container, hr,.bmi{
     max-width: 1060px;
     margin: 0 auto;
 }
@@ -186,6 +186,59 @@ nav,.extra-mile-container, .our-team, .footer-container, hr{
     margin: 0 auto;
     text-align: center;
 }
+
+
+
+
+/*-- BMI Calculator*/
+.bmi{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+.bmi-chart{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+}
+table{
+    border-collapse: collapse;
+    padding: 10px;
+}
+tbody,td,th{
+    border: 1px solid white;
+    border-collapse: collapse;
+    padding: 15px;
+}
+label input{
+    padding: 10px;
+    border-radius: 10px;
+    width: 45%;
+    height: 30px;
+}
+label input #factor{
+    width: 300px;
+}
+.calculation-bmi h2, p{
+    padding-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* trainer-description */
 .trainer-portfolio{
     text-align: center;
@@ -224,7 +277,7 @@ nav,.extra-mile-container, .our-team, .footer-container, hr{
 /* Footer */
 
 footer{
-    max-width: 1440px;
+    /* max-width: 1440px; */
     background-color: #FFFFFF1A;
 }
 .footer-container{
@@ -286,7 +339,7 @@ hr{
 
 /* responsive */
 @media screen and (max-width: 576px){
-    .navbar, .banner-content, .change-part, .extra-mile-container, .our-team, footer{
+    .navbar, .banner-content, .change-part, .extra-mile-container, .our-team, footer, .calculation-bmi{
         margin: 0 1.5rem;
     }
     .fitness-exercise{
@@ -401,7 +454,27 @@ hr{
     .extra-mile-btn{
         width: 100%;
     }
+    /*-- BMI Calculator*/
+    .bmi{
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+    }
+    .bmi-chart{
+        display: flex;
+        flex-direction: column;
+    }
 
+   
+
+    .value-btn{
+        /* margin: 0 auto; */
+        /* width: 80%; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+ 
 
     /* trainer-description */
     .trainer-portfolio{
