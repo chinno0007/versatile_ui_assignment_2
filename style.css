@@ -110,9 +110,82 @@ nav{
 }
 
 
+
+/* change habits   */
+.change-part{
+    max-width: 1060px;
+    margin: 0 auto;
+    /* border: 5px solid red; */
+    margin-top: 6rem;
+    margin-bottom: 6rem;
+}
+.change-info{
+    text-align: center;
+}
+.change-info-title{
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.card{
+    text-align: center;
+    /* border: 2px solid red; */
+    /* width: 200px; */
+}
+.card>p{
+    margin: 5px;
+    color:rgba(255, 255, 255, 0.5);;
+}
+.card img{
+    border-radius: 50%;
+    border: 1px solid white;
+    width: 70%;
+}
+.card-title{
+    margin: 0;
+    padding-top: 1rem;
+}
+.card-container{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    place-items: center;
+    margin-top: 3.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* responsive */
 @media screen and (max-width: 576px){
-    .navbar, .banner-content{
+    .navbar, .banner-content, .change-part{
         margin: 0 1.5rem;
     }
     .fitness-exercise{
@@ -180,5 +253,21 @@ nav{
         display: flex;
         justify-content: space-between;
     }
-    
+    /* cards */
+    .card-container{
+        margin: 0 auto;
+        /* display: grid; */
+        /* grid-template-columns: repeat(1, 70%); */
+        display: flex;
+        flex-direction: column;
+        width: 60%;
+        gap: 10px;
+        place-items: center;
+        margin-top: 3.5rem;
+    }
+    .card img{
+        border-radius: 50%;
+        border: 1px solid white;
+        width: 100%;
+    }
 }
